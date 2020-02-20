@@ -46,7 +46,7 @@ header{
 
 .navbar-brand{
     padding: 5px 20px 5px 20px; 
-    color: #F29313 !important; 
+    color: black !important; 
  
 }
 
@@ -55,7 +55,7 @@ header{
 }
 
 .nav-link{
-    color:#F29313 !important; 
+    color: black !important; 
 }
 
 #navBox{

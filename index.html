@@ -1,23 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
+    <title>Kyle Hazen Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   
-    
-    <link rel="stylesheet" href="./main.css">
+   <link rel="stylesheet" href="./main.css">
 </head>
+
 <body>
+    
+    <!--Page Wrapper-->
+    <div class="container-fluid">
 
+        <!--Header-->
+        <Header id="header" class="header mobile-device">
+            <!--Logo-->
+            <div class="logo">
+                <a href="index.html"><img class="logoFile" src="assets/logo-orange.png " alt="Kyle Hazen">
+                </a>
+            </div>
+            <!--Nav Bar Navigation-->
+                <div class="container-fluid" class="navbar navbar-light bg-light">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="#header">Home</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav" id="navBox">
+                          <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#myStory">My Story <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#myExperience">Skillset<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#myPortfolio">Portfolio<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#contactMe">Contact<span class="sr-only">(current)</span></a>
+                            </li>
+                          </ul>
+                        </div>
+                    </nav>
+                </div>
+        </Header>
+        <!--End Header-->
 
+        <!--Greeting/Intro-->
+        <section id="greeting">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container-fluid">
+                <h1 class="display-4">Kyle Hazen</h1>
+                <p class="lead">Software Developer</p>
+                </div>
+            </div>
+        </section>
 
+        <!--My Story (Columns)-->
+    
+        <section id="myStory">
+            <div class="container-fluid">
+                <br/> 
+                <h2 class="myStoryHeader">My Story</h2>
+                <br/>
+            </div>
+            <div class="container-fluid" id="myStoryGrid">
+                <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4" id="myStoryCol1">
+                    <p class="myStoryText"> Hello! Thanks for stopping by my portfolio page. I’m Kyle, in case you were so transfixed by the waterfall above that you missed my name. I am currently a student in the Eleven Fifty Academy software development program in Fishers, Indiana. After ten years in youth ministry, I decided it was time for a transition.
+                    </p>
+                    
+                    <p>I have always enjoyed finding creative ways to utilize the tools that I had at my disposal to solve problems. In youth ministry, that skillset surfaced in a large variety of ways. From trouble shooting audio/visual technology to finding ways to creatively train and equip students for leadership. I got very good at using what I had to find a solution to the problem at hand. It was in those moments where I felt energized!
+                    </p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4" id="myStoryCol2">
+                    <p class="myStoryText"> In college I took a basic html and database class, in which my professor said, “Hey, you’re pretty good at this!” Never in all of my academic career have I had any other teacher say that to me! It always stuck with me as a “what if” I would have tried that route.
+                    </p>
+                        
+                    <p> As a result, when I began this transition developer was one of the options at the top of the list. Upon investigating what this world was all about things like creative problem solving, the detail-oriented nature of the job, and the challenge of figuring out ways to link the flow of data jumped out at me. I knew I had to give a chance, so I dove in! I am very excited to see where this career path leads. 
+                    </p>
 
+                    <p id="cantWait">I can’t wait to talk to you!</p>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4" id="myStoryCol3">
+                    <p class="myStoryText"> Some random fun stuff about me. I am an accomplished saxophonist who loves concerts, sports, and the outdoors. I am always up for a competitive table tennis match and am an avid backpacker. All the pictures you see on this page are from several trekking adventures I took in New Zealand in March 2019.   
+                    </p>
+                </div>
+                </div>
+            </div>
+        </section>
+        <br/>
 
+        <!--My Experience (Carousel)-->
+        <section id="myExperience">
+        
+            <div id="carouselExampleCaptions" class="carousel slide" data-interval="10000">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+    
+                <div class="carousel-inner" class="carouselPane">
+                    <div class="carousel-item active">
+                        <img src="assets/keplerNarrowWithIcons.png" class="d-block w-100" alt="My Skillset">
+                    <div class="carousel-caption d-none d-md-block" id="carouselText">
+                    </div>
+                </div>
+                
+                <div class="carousel-item" class="carouselPane">
+                    <img src="assets/nz_dock_lakeWithText.png" class="d-block w-100" alt="Areas of Expertise">   
+                    <div class="carousel-caption d-none d-md-block">
+                    
+                    </div>
+                </div>
+                
+                <div class="carousel-item" class="carouselPane">
+                    <img src="assets/MtDoomNarrow.jpg" class="d-block w-100" alt="Resume Link">
+                    <div class="carousel-caption d-none d-md-block" id="resumeText">
+                        <h5 id="resumeHeader">To see how I have used these skills check out my portfolio below and download my resume right here.</h5>
+                        <a class="btn btn-primary" href="https://drive.google.com/open?id=1Aq_qK7UXvzcr8Exb1vzJESp5IO-ynyMf" role="button">Resume</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+        <br\>
 
+        <!--Portfolio (Cards)-->
+        <section id="myPortfolio">
 
+            <div class="container" class="clearfix">
+                <h1 class="myPortfolioHeader">My Portfolio</h1>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-x-4">
+                        <div class="card" style="width: 20rem;">
+                            <a href="https://codepen.io/cwing3121/full/BayExBa"><img src="assets/CSS Creature.jpg" class="card-img-top" class="img-thumbnail" alt="CSS Creature">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text">A fun baby Dracula that I made with just html and CSS.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-x-4">
+                        <div class="card" style="width: 20rem;">
+                            <a href="https://k-hazen.github.io/staticStoreFront/"><img src="assets/StaticStoreFront2.JPG" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text">My first static webpage. Built with html and CSS.</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-x-4">
+                        <div class="card" style="width: 20rem;">
+                            <a href="#"><img src="assets/coming-soon.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text"> More projects coming soon!</p>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+     
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-x-4">
+                        <div class="card" style="width: 20rem;">
+                            <a href="#"><img src="assets/coming-soon.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text">More projects coming soon!</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-x-4">
+                        <div class="card" style="width: 20rem;">
+                            <a href="#"><img src="assets/coming-soon.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text">More projects coming soon!.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-x-4">
+                        <div class="card" style="width: 20rem;">
+                            <a href="#"><img src="assets/coming-soon.jpg" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                            <p class="card-text">More projects coming soon!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </section>
+        <br/>
+
+        
+
+        <!--Contact Me Columns-->
+        <section id="contactMe">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" id="contactColumnOne">
+                        <div class="container-fluid" id="messageMeBox">
+                            <div style="text-align: left">
+                            <h4 id="messageMeHeader">Send Me A Message</h4>
+                            </div>
+                
+                            <form action="mailto:kyle_hazen@icloud.com">
+                            <label for="name" id="nameLabel">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="Your name...">
+                            <br/>
+                            <br/>
+                            <label for="email" id="emailLabel">Email:</label>
+                            <input type="text" id="email" placeholder="Your email address...">
+                            <br/>
+                            <br/>
+                            <label for="message">Message:</label>
+                            <textarea id="message" placeholder="Your message..." style="height:50px" style="width:200px"></textarea>
+                            <br/>
+                            <br/>
+                            <input type="submit" value="Submit" id="submitButton">
+                            </form>
+                        </div>
+                    </div>
+  
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6" id="contactColumnTwo">
+                        <h4 id="contactInfoHeader">Contact Information</h4>
+                        <p class="emailPhone">Email: kyle_hazen@icloud.com</p>
+                        <p class="emailPhone">Phone: 541.733.2944</p>
+                        <br/>
+                        <div class="divy">
+                            <ul>
+                                <li class="divyTwo"><a href="https://www.linkedin.com/in/kyle-hazen-aa01331a2/"><img src="assets/LinkedIn_logo.png" atl="LinkedIn" border="0" class="socialMedia" /></a></li>
+                                <li class="divyTwo"><a href="https://github.com/K-Hazen"><img src="assets/github_logo1.jpg" atl="GitHub" border="0" class="socialMedia" /></a></li>
+                            </ul>
+                        </div>
+                            
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <br/>
+
+        <!--Footer--> 
+        <footer>
+            <div class="container-fluid padding">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h5>&copy; Kyle Hazen 2020</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
 
 

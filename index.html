@@ -28,24 +28,24 @@
             </div> -->
             <!--Nav Bar Navigation-->
             <div class="container-fluid">   
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <nav class="navbar navbar-expand-md navbar-light bg-light">
                     <a class="navbar-brand" href="#header">
                         <img class="logoFile" src="assets/logo-orange.png " width="50" height="50" alt="KyleHazen">
                     </a>
-                    <!-- <a class="navbar-brand" href="#header">Home</a> -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBox" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                    </button>
+                      </button>
                     <div class="collapse navbar-collapse" collaspe w-100 order-3 dual-collapse2 id="navBox">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#myStory">My Story <span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#myExperience">Skillset<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#myPortfolio">Portfolio<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item active">
-                                <a class="nav-link" href="#myPortfolio">Portfolio<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#skillSection">Skill Sets<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item active">
                                 <a class="nav-link" href="#contactMe">Contact<span class="sr-only">(current)</span></a>
@@ -61,9 +61,10 @@
         <!--Greeting/Intro-->
         <section id="greeting">
             <div class="jumbotron jumbotron-fluid">
-                <div class="container-fluid">
+                <div class="container">
                 <h1 class="display-4">Kyle Hazen</h1>
                 <p class="lead">Software Developer</p>
+                <p class="lead">Trainer</p>
                 </div>
             </div>
         </section>
@@ -103,54 +104,14 @@
         </section>
         <br/>
 
-        <!--My Experience (Carousel)-->
-        <section id="myExperience">
-        
-            <div id="carouselExampleCaptions" class="carousel slide" data-interval="10000">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                </ol>
-    
-                <div class="carousel-inner" class="carouselPane">
-                    <div class="carousel-item active">
-                        <img src="assets/keplerNarrowWithIcons.png" class="d-block w-100" alt="My Skillset">
-                    <div class="carousel-caption d-none d-md-block" id="carouselText">
-                    </div>
-                </div>
-                
-                <div class="carousel-item" class="carouselPane">
-                    <img src="assets/nz_dock_lakeWithText.png" class="d-block w-100" alt="Areas of Expertise">   
-                    <div class="carousel-caption d-none d-md-block">
-                    
-                    </div>
-                </div>
-                
-                <div class="carousel-item" class="carouselPane">
-                    <img src="assets/MtDoomNarrow.jpg" class="d-block w-100" alt="Resume Link">
-                    <div class="carousel-caption d-none d-md-block" id="resumeText">
-                        <h5 id="resumeHeader">To see how I have used these skills check out my portfolio below and download my resume right here.</h5>
-                        <a class="btn btn-primary" href="https://drive.google.com/open?id=1Aq_qK7UXvzcr8Exb1vzJESp5IO-ynyMf" role="button">Resume</a>
-                    </div>
-                  </div>
-                </div>
-                
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+        <section>
+            <div class="container-fluid">
+                <img src="assets/KeplerNarrow.jpg" id="kepler" class="d-block w-100" alt="Section Divider">
             </div>
         </section>
-        <br\>
 
-        <!--Portfolio (Cards)-->
-        <section id="myPortfolio">
+         <!--Portfolio (Cards)-->
+         <section id="myPortfolio">
 
             <div class="container-fluid" class="clearfix">
                 <h1 class="myPortfolioHeader">My Portfolio</h1>
@@ -242,6 +203,117 @@
             </div>
         </section>
         <br/>
+
+        <section>
+            <div class="container-fluid">
+                <img src="assets/MtDoomNarrow.jpg" id="mtDoom" class="d-block w-100" alt="Section Divider">
+            </div>
+        </section>
+
+   <!--My Experience-->
+        <section id="skillSection">
+            <div class="container">
+                <br/> 
+                <h2 class="mySkillsHeader">My Skill Sets</h2>
+                <br/>
+            </div>
+            <div class="container-fluid" id="mySkillsGrid">
+                <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" id="mySkillsCol1">
+                    <h5 class="techSkillHeader">Tech Skill Set</h5>
+                    <ul class="list-group list-group-flush" id="myTechSkills">
+                        <li class="list-group-item">C#/.Net</li>
+                        <li class="list-group-item">Html & CSS</li>
+                        <li class="list-group-item">ASP .NET Web API</li>
+                        <li class="list-group-item">ASP .NET Web MVC</li>
+                        <li class="list-group-item">Razor Pages</li>
+                        <li class="list-group-item">Unit Testing</li>
+                        <li class="list-group-item">GitHub</li>
+                        <li class="list-group-item">Agile</li>
+                        <li class="list-group-item">Trillo</li>
+                        <li class="list-group-item">Visual Studio</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" id="mySkillsCol2">
+                    <h5 class="softSkillHeader">Soft Skill Set</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Public Speaking/Presenting</li>
+                        <li class="list-group-item">Project Management</li>
+                        <li class="list-group-item">Teaching/Training</li>
+                        <li class="list-group-item">Curriculum Development</li>
+                        <li class="list-group-item">Leadership Development</li>
+                        <li class="list-group-item">Change Management</li>
+                        <li class="list-group-item">Customer Service</li>
+                        <li class="list-group-item">Writing</li>
+                        <li class="list-group-item">Event Coordination/Management</li>
+                        <li class="list-group-item">Organizational Cutlure Development</li>
+                        <li class="list-group-item">Listening</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" id="mySkillsCol3">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            For more information on how these skills were applied in a working environment check out my resume.
+                        </li>
+                    </ul>
+                    <br>
+
+                    <div id="resume">
+                        <a class="btn btn-primary" href="https://drive.google.com/open?id=1Aq_qK7UXvzcr8Exb1vzJESp5IO-ynyMf" role="button">Resume</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <br/>
+
+        <!--My Experience (Carousel)-->
+        <!-- <section id="myExperience">
+        
+            <div id="carouselExampleCaptions" class="carousel slide" data-interval="10000">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+    
+                <div class="carousel-inner" class="carouselPane">
+                    <div class="carousel-item active">
+                        <img src="assets/keplerNarrowWithIcons.png" class="d-block w-100" alt="My Skillset">
+                    <div class="carousel-caption d-none d-md-block" id="carouselText">
+                    </div>
+                </div>
+                
+                <div class="carousel-item" class="carouselPane">
+                    <img src="assets/nz_dock_lakeWithText.png" class="d-block w-100" alt="Areas of Expertise">   
+                    <div class="carousel-caption d-none d-md-block">
+                    
+                    </div>
+                </div>
+                
+                <div class="carousel-item" class="carouselPane">
+                    <img src="assets/MtDoomNarrow.jpg" class="d-block w-100" alt="Resume Link">
+                    <div class="carousel-caption d-none d-md-block" id="resumeText">
+                        <h5 id="resumeHeader">To see how I have used these skills check out my portfolio below and download my resume right here.</h5>
+                        <a class="btn btn-primary" href="https://drive.google.com/open?id=1Aq_qK7UXvzcr8Exb1vzJESp5IO-ynyMf" role="button">Resume</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+        <br\> -->
+
+       
 
         
 
